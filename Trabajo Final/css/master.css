@@ -1,0 +1,137 @@
+/*=== index.css main.css styles.css estilos.css app.css ===*/
+/*Los selectores
+            Etiquetas  (h1 - p - ul li - h2 - h3)  
+            Id (Identificador único - #logo{Propiedad: valor;})
+            Clases - ( . )  .destacado{Propiedad: valor;}
+*/
+/*=== Aplicando CSS de forma Global===*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+#Untrefschool{
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: center;
+
+}
+
+.Navegador{
+    width: 100%;
+    height: 4.2 rem;
+    background-color: #00425a;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Navegador ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.3rem;
+    row-gap: 0.9rem;
+    column-gap: 0.9rem;
+}
+
+.banner{
+    width: 100%;
+    height: 30rem;
+    background-image: url(./IMG/photo-1509062522246-3755977927d7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #00425a;
+    border-radius: 1.25rem;
+    margin: 1rem;
+    padding: 1rem;
+    border: #181823 0.313rem solid;
+}
+
+.conteirner-footer-general{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contacto{
+    display: flex;
+}
+
+.lista-contacto{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    column-gap: 2;
+    align-items: flex-start;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8rem;
+    color: #eff5f5;
+}
+    /* Responsive */
+@media(width <48rem){
+    /*Tablets */
+    main{
+        width: 98%;
+    }
+    section{
+        padding:0rem;
+    }
+    section>div{
+        flex-wrap:wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card, .formulario, footer>div{
+        width:100%;
+    }
+    .card{
+        max-width: 31.25rem;
+    }
+    footer>div{
+        margin-bottom: 1.25rem;
+    }
+    footer ul{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacto{
+        text-align: center;
+    }
+    footer{
+        flex-wrap:wrap;
+        flex-direction: column;
+       
+    }
+    
+}
+@media(width <28.75rem){
+    /*smartphones */
+.bg-header{
+    height: 37.5rem;
+}
+
+}
+    
+
